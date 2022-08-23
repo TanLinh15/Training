@@ -1,0 +1,7 @@
+-  SSL và các thuật ngữ, vấn đề liên quan
+- Domain là gì?
+- DNS là gì? 1 số record của DNS.
+- Hosting, vps, server là gì?
+- Reverse proxy là gì, nguyên lý hoạt động?
+- Vhost là gì? Vhost hoạt động thế nào?
+- So sánh giữa Nginx và Apache?

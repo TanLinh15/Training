@@ -1,0 +1,2 @@
++ Viết script backup mysql: Mỗi ngày đều backup, lưu trữ file backup tại /home/backup và giữ lại 3 bản gần nhất. (bashshell)    
+chạy backup bằng cronjob viết script bằng bash shell

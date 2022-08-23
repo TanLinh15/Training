@@ -1,0 +1,9 @@
+- Xây dựng default vhost: ví dụ, mình đang tạo 2 vhost cho 2 domain wordpress.training.vn và laravel.training.vn, có 1 domain khác cũng trỏ về IP server mình nhưng mình không khai báo vhost cho nó, chẳng hạn domain vietnix.training.vn, 2 bạn có thể tìm hiểu xem nó sẽ vào vhost nào, và có cách nào trỏ tất cả các domain vô danh trên vào 1 vhost hay không
+- Xây dựng reversse proxy kết hợp giữa 2 ứng dụng nginx và apache2
+Domain: wordpress.training.vn - dựng wordpress
+Domain: laravel.training.vn - dựng laravel
+Bất kỳ domain nào khác hoặc truy cập qua IP phải cần qua 1 default vhost.
+  + reverse proxy,
+  + mysql (bật remote mysql từ xa),
+  + phpmyadmin,
+  + cho phép truy cập port 80, 443, 3306, 22
