@@ -126,3 +126,38 @@ dpkg -R --install /deb-files-location /
 
 # APT-CACHE
 - Công cụ apt-cache được sử dụng để tìm kiếm package đã cài đặt sẵn qua công cụ ATP. Nói một cách dễ hiểu, công cụ này được sử dụng để tìm kiếm các gói phần mềm, thu thập thông tin của các gói và tìm kiếm những gói có sẵn trên hệ thống Debian hoặc Ubuntu.
+
+
+- Dưới đây là cách sử dụng lệnh apt-cache trong Ubuntu (các lệnh phụ).
+
+### pkgnames
+- Hiển thị tên của tất cả các package mà ATP có hỗ trợ, các package này không nhất thiết phải có sẵn để tải về hoặc đã cài đặt, kể cả những package ảo cũng được liệt kê.
+```
+apt-cache pkgnames
+```
+### search
+- Để tìm thông tin mô tả của một package trước khi cài đặt thì ta sử dụng lệnh search.
+
+- Sử dụng apt-cache search sẽ hiển thị danh sách các gói phù hợp và mô tả ngắn gọn của package. Giả sử bạn muốn tìm hiểu mô tả về package ‘vsftpd‘, thì lệnh sẽ là.
+```
+apt-cache search vsftpd
+```
+- Để tìm và liệt kê tất cả các package bắt đầu bằng ‘vsftpd‘, bạn có thể sử dụng lệnh sau
+
+```
+$ apt-cache pkgnames vsftpd
+```
+### show
+- Nếu bạn muốn xem thông tin mô tả ngắn gọn của package như (version, kích thước, kích thước sau khi cài đặt, danh mục ..) thì dụng lệnh phụ show như dưới đây.
+```
+ apt-cache show netcat
+```
+### showpkg
+- Sử dụng lệnh phụ ‘showpkg‘ để kiểm tra package phụ của một package, các package phụ đó đã được cài đặt hay chưa.
+```
+
+$ apt-cache showpkg vsftpd
+```
+### stats
+
+- Lệnh stats dùng để thống kê tổng thể các package như: tổng số tên của package trong cache, tổng số các package ảo, ...
