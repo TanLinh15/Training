@@ -158,3 +158,50 @@ $ apt-cache pkgnames vsftpd
 
 $ apt-cache showpkg vsftpd
 ```
+# APT GET
+- apt-get là một công cụ quản lý các package trong Linux Ubuntu và Debian thông qua dòng lệnh command line, được sử dụng để làm việc với thư viện APT (Advanced Packaging Tool) của Ubuntu và thực hiện các thao tác như:
+
+1.  Cài đặt các gói phần mềm mới
+1. Xóa các gói phần mềm hiện có
+1. Nâng cấp các gói phần mềm hiện có
+1. Thậm chí được sử dụng để nâng cấp toàn bộ hệ điều hành.
+ - Dưới đây là một số lệnh sub của apt-get.
+
+
+### update
+- Lệnh update được sử dụng để đồng bộ lại các file được chỉ định trong file /etc/apt/sources.list. Lệnh update sẽ tìm nạp các gói từ vị trí của chúng và cập nhật các gói lên phiên bản mới hơn.
+```
+sudo apt-get update
+```
+### upgrade
+- Lệnh upgrade được dùng để nâng cấp tất cả các gói phần mềm đang được cài đặt trên hệ thống.
+```
+sudo apt-get upgrade
+```
+### install
+- Lệnh install dùng để cài đặt hoặc nâng cấp package.
+```
+ sudo apt-get install netcat
+```
+### Để cài đặt một lúc nhiều package thì dùng nhưu sau.
+```
+$ sudo apt-get install nethogs goaccess
+```
+### Cài đặt package nhưng không cho gói đó nâng cấp.
+```
+sudo apt-get install packageName --no-upgrade
+```
+### Cài đặt một version cụ thể nào đó.
+```
+sudo apt-get install vsftpd=2.3.5-3ubuntu1
+```
+### remove
+- Lệnh remove dùng để xóa package.
+- Ví dụ này xóa package nhưng không xóa trong file config.
+```
+sudo apt-get remove vsftpd
+```
+- Lệnh này sẽ xóa package và xóa chúng luôn trong file config.
+```
+sudo apt-get purge vsftpd
+```
