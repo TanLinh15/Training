@@ -158,6 +158,3 @@ $ apt-cache pkgnames vsftpd
 
 $ apt-cache showpkg vsftpd
 ```
-### stats
-
-- Lệnh stats dùng để thống kê tổng thể các package như: tổng số tên của package trong cache, tổng số các package ảo, ...
